@@ -1,11 +1,14 @@
 import React from "react";
 import StudySet from "../sets/StudySet";
+import { Container } from "react-bootstrap";
+import "./ClassRoom.css";
 
 const ClassRoom = () => (
-	<div className="classroom">
+	<Container className="classroomContainer">
 		<StudySet />
+		<br />
 		<StudySet />
-	</div>
+	</Container>
 );
 
 export default ClassRoom;

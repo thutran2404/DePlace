@@ -3,18 +3,11 @@ import PropTypes from "prop-types";
 import { Row } from "react-bootstrap";
 import JulianCell from "./JulianCell";
 
-const JulianRow = ({ cells, component: Component, positions }) => {
-	console.log("here", positions);
+const JulianRow = ({ cells, renderComponent }) => {
 	return (
 		<Row>
 			{Array.from({ length: cells }, (_, index) => (
-				<JulianCell key={index}>
-					{positions && positions.includes(index) && Component ? (
-						<Component />
-					) : (
-						"Empty"
-					)}
-				</JulianCell>
+				<JulianCell key={index}>{renderComponent(index)}</JulianCell>
 			))}
 		</Row>
 	);
@@ -22,8 +15,7 @@ const JulianRow = ({ cells, component: Component, positions }) => {
 
 JulianRow.propTypes = {
 	cells: PropTypes.number.isRequired,
-	component: PropTypes.elementType,
-	positions: PropTypes.arrayOf(PropTypes.number),
+	renderComponent: PropTypes.func.isRequired,
 };
 
 export default JulianRow;
