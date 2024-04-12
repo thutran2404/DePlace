@@ -23,7 +23,7 @@
 
 .chairContainer.right {
 	top: 0;
-	right: 0;
+	right: 25px;
 }
 
 .chairContainer.bottom {
@@ -33,5 +33,5 @@
 
 .chairContainer.left {
 	bottom: 0;
-	right: 0;
+	right: 28px;
 }
