@@ -1,9 +1,7 @@
 import React from "react";
 
-const Julian = () => (
-	<div>
-		<div>Julian</div>
-	</div>
-);
+const Julian = () => {
+	return <div className="container text-center">Julian</div>;
+};
 
 export default Julian;

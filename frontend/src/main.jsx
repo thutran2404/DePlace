@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./ErrorPage";
 import NavBar from "./components/utils/NavBar";
 import Footer from "./components/utils/Footer";
+import JulianWorkspace from "./routes/JulianWorkspace";
 
 const router = createBrowserRouter([
 	{
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
 	{
 		path: "/error",
 		element: <ErrorPage />,
+	},
+	{
+		path: "/julian",
+		element: <JulianWorkspace />,
 	},
 ]);
 
