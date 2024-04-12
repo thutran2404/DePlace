@@ -1,10 +1,10 @@
 import React from "react";
-import TableSet from "../sets/TableSet";
+import StudySet from "../sets/StudySet";
 
 const ClassRoom = () => (
 	<div className="classroom">
-		<TableSet />
-		<TableSet />
+		<StudySet />
+		<StudySet />
 	</div>
 );
 
