@@ -3,10 +3,10 @@
 	margin: 2rem auto;
 	border: 2px solid black;
 	border-radius: 10px;
-	background-color: #fffdd0;
-}
-
-.customCol {
-	height: 125px;
-	width: 175px;
+	height: 750px;
+	width: 1200px;
+	background-image: url("../../../../assets/images/julianfinal.png");
+	background-size: cover; /* Cover the entire container */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-position: center;
 }
