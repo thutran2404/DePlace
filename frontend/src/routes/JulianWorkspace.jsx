@@ -1,5 +1,5 @@
 import React from "react";
-import Julian from "../components/workspaces/layouts/julian/Julian";
+import Julian from "../components/julian/Julian";
 export default function JulianWorkspace() {
 	return (
 		<>

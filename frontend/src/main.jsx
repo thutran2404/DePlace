@@ -5,6 +5,10 @@ import Root from "./routes/Root";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./ErrorPage";
 import JulianWorkspace from "./routes/JulianWorkspace";
+import LibraryWorkspace from "./routes/LibraryWorkspace";
+import SignUp from "./components/SignUp";
+import SignIn from "./components/SignIn";
+import Welcome from "./components/Welcome";
 
 const router = createBrowserRouter([
 	{
@@ -18,6 +22,22 @@ const router = createBrowserRouter([
 	{
 		path: "/julian",
 		element: <JulianWorkspace />,
+	},
+	{
+		path: "/library",
+		element: <LibraryWorkspace />,
+	},
+	{
+		path: "/sign-up",
+		element: <SignUp />,
+	},
+	{
+		path: "/sign-in",
+		element: <SignIn />,
+	},
+	{
+		path: "/welcome",
+		element: <Welcome />,
 	},
 ]);
 
