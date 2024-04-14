@@ -9,4 +9,5 @@
 	background-size: cover; /* Cover the entire container */
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-position: center;
+	position: relative;
 }

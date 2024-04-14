@@ -1,0 +1,9 @@
+.character {
+	background-color: pink;
+	line-height: 50px;
+	position: absolute;
+	font-size: 8px;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 8px;
+}
